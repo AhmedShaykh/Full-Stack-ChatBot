@@ -155,7 +155,7 @@ const MapWithCar = () => {
                 fontSize: "14px",
                 fontWeight: "bold",
               }}>
-                SUV's
+               {` SUV's`}
               </Typography>
               <Typography sx={{
                 fontSize: "12px",

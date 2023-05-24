@@ -3,7 +3,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import CarCredentials from "@/components/carbooking/CarCredentials";
 import PriceAndLocation from "@/components/carbooking/PriceAndLocation";
-import MainDriverDetails from "@/components/checkout/MainDriverDetails";
+// import MainDriverDetails from "@/components/checkout/MainDriverDetails";
 import BillingAddress from "@/components/checkout/BillingAddress";
 import Payment from "@/components/checkout/Payment";
 import MoneySavingIdea from "@/components/checkout/MoneySavingIdea";
