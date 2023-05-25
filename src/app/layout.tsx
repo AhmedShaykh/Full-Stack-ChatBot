@@ -1,13 +1,8 @@
-"use client";
 import Navbar from '@/components/Navbar/Navbar';
 import Bar from '@/components/Bar/Bar';
 import { Providers } from "@/redux/provider";
+import Head from './Head';
 import './globals.css';
-
-export const metadata = {
-  title: 'Cheap Car Hire, Compare Rental Prices',
-  description: 'Cheap Car Hire, Compare Rental Prices - Rentalcars.com',
-};
 
 export default function RootLayout({
   children,
@@ -16,6 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head />
       <body>
         <Providers>
           <Navbar />

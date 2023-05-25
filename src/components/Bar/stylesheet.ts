@@ -31,4 +31,12 @@ export default makeStyles({
             padding: "0.6rem",
         }
     },
+
+    "@media (max-width: 550px)": {
+        barContainer: {
+            textAlign: "center",
+            paddingLeft: "3rem",
+            paddingRight: "3rem"
+        }
+    }
 });
