@@ -26,7 +26,6 @@ const Result = () => {
         };
 
         getCars();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
@@ -40,7 +39,6 @@ const Result = () => {
                     className={classes.mainBox}
                 >
                     <Filters />
-
                     <Box className={classes.wrapper}>
                         {cars.map((i: any) => (
                             <Box key={i.id}>
