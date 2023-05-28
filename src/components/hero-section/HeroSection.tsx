@@ -6,13 +6,11 @@ import { Box, Button, Checkbox, TextField, Typography } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const HeroSection = () => {
 
   const classes = useStyles();
-
-  const router = useRouter();
 
   return (
     <Box className={classes.mainContainer}>
@@ -98,13 +96,15 @@ const HeroSection = () => {
                   />
                 </Box>
               </Box>
-              <Button className={classes.searchButton}
-                onClick={() => {
-                  router.push("/search-results");
-                }}
-              >
-                Search
-              </Button>
+              <Link href="/search-results">
+                <Button className={classes.searchButton}
+                // onClick={() => {
+                //   router.push("/search-results");
+                // }}
+                >
+                  Search
+                </Button>
+              </Link>
             </Box>
           </Box>
           <Box className={classes.bottomContainer}>

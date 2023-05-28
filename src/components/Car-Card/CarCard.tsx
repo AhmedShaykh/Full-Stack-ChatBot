@@ -13,6 +13,7 @@ interface TabPanelProps {
 }
 
 function TabPanel(props: TabPanelProps) {
+  
   const { children, value, index, ...other } = props;
 
   return (
@@ -84,11 +85,11 @@ const CarCard = () => {
               </Box>
               <Box>
                 <Box>
-                    <Typography>OK</Typography>
-                    <Typography>2 reviews</Typography>
+                  <Typography>OK</Typography>
+                  <Typography>2 reviews</Typography>
                 </Box>
                 <Box>
-                    6.2
+                  6.2
                 </Box>
               </Box>
             </Box>
