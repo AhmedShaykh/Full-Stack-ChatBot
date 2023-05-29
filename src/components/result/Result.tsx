@@ -12,16 +12,13 @@ const Result = () => {
 
     return (
         <>
-            <Box
-                className={classes.pad}
-            >
+            <Box className={classes.pad}>
                 <LocationBar />
                 <MapWithCar />
-                <Box
-                    className={classes.mainBox}
-                >
+
+                <Box className={classes.mainBox}>
                     <Filters />
-                    {/* <Cars /> */}
+                    <Cars />
                 </Box>
             </Box>
         </>
