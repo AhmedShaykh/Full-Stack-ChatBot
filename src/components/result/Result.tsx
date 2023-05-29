@@ -3,8 +3,8 @@ import { Box } from "@mui/material";
 import LocationBar from "@/components/location-bar/LocationBar";
 import MapWithCar from "@/components/Map-with-Car/MapWithCar";
 import Filters from "@/components/Filters/Filters";
-import useStyles from "@/components/result/stylesheet";
 import Cars from "../CarCard/Cars";
+import useStyles from "@/components/result/stylesheet";
 
 const Result = () => {
 
@@ -21,7 +21,7 @@ const Result = () => {
                     className={classes.mainBox}
                 >
                     <Filters />
-                    <Cars />
+                    {/* <Cars /> */}
                 </Box>
             </Box>
         </>
