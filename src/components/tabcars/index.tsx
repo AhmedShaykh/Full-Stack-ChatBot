@@ -48,17 +48,19 @@ const TabCars = () => {
 
     return (
         <Box className={classes.mainContainer}>
-            <Box sx={{ width: '100%' }}>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                        <Tab label="Economy" {...a11yProps(0)} />
-                        <Tab label="SUV" {...a11yProps(1)} />
-                        <Tab label="Standard" {...a11yProps(2)} />
-                        <Tab label="People Carrier" {...a11yProps(3)} />
-                        <Tab label="Estate" {...a11yProps(4)} />
-                        <Tab label="Convertible" {...a11yProps(5)} />
-                        <Tab label="Luxury" {...a11yProps(6)} />
-                    </Tabs>
+            <Box className={classes.CarContainer}>
+                <Box style={{ overflowX: 'auto', width: "100%", display: "flex", justifyContent: "space-around" }}>
+                    <Box>
+                        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+                            <Tab label="Economy" {...a11yProps(0)} />
+                            <Tab label="SUV" {...a11yProps(1)} />
+                            <Tab label="Standard" {...a11yProps(2)} />
+                            <Tab label="People Carrier" {...a11yProps(3)} />
+                            <Tab label="Estate" {...a11yProps(4)} />
+                            <Tab label="Convertible" {...a11yProps(5)} />
+                            <Tab label="Luxury" {...a11yProps(6)} />
+                        </Tabs>
+                    </Box>
                 </Box>
                 <TabPanel value={value} index={0}>
                     <CarsList />
