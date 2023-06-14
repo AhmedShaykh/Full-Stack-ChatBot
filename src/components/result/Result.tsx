@@ -18,7 +18,7 @@ const Result = () => {
 
                 <Box className={classes.mainBox}>
                     <Filters />
-                    {/* <Cars /> */}
+                    <Cars />
                 </Box>
             </Box>
         </>
